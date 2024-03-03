@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- base url -->
+    <base href="#">
+
+    <!-- charset info -->
+    <meta charset="UTF-8">
+
+    <!-- basic info -->
+    <meta name="author" content="Acan">
+    <meta name="keywords" content="HTML, CSS, JavaScript, template">
+    <meta name="description" content="Acan's standard web template. ">
+
+    <!-- open graph -->
+    <meta property="og:title" content="Myosotis Web - Scholar Light">
+    <meta property="og:image" content="./ogImage.jpg">
+    <meta property="og:description" content="Acan's standard web template. ">
+
+    <!-- browser info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- system info -->
+    <meta name="apple-mobile-web-app-title" content="Myosotis Web - Scholar Light">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- search engine info -->
+    <meta name="robots" content="index, follow">
+
+    <!-- other meta info -->
+    <meta content="always" name="referrer">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- web title -->
+    <title>Myosotis Config - Web</title>
+
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- script: Latex -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 style="display: none;">Web Format</h1>
+        <nav>
+            <a href="../">Myosotis Web</a>
+            <a href="#">Scholar Light</a>
+        </nav>
+    </header>
+
+    <div id="download_files">
+        <h2>Download Files</h2>
+        <nav>
+            <a href="./archive.zip" download="archive.zip">archive.zip</a> |
+            <a href="./index.html" download="index.html">index.html</a> |
+            <a href="./index.scss" download="index.scss">index.scss</a> |
+            <a href="./index.css.map" download="index.css.map">index.css.map</a> |
+            <a href="./index.css" download="index.css">index.css</a> |
+            <a href="./index.js" download="index.js">index.js</a> |
+            <a href="./favicon.ico" download="favicon.ico">favicon.ico</a>
+        </nav>
+    </div>
+
+    <div id="copy_url">
+        <h2>Copy Url</h2>
+        <nav style="margin-block-end: 0;">
+            <a href="#" download="index.css" id="a_1">index.css</a> |
+            <a href="#" download="index.js" id="a_2">index.js</a> |
+            <a href="#" download="favicon.ico" id="a_3">favicon.ico</a>
+            <script>
+                const baseUrl = "https://zeyu-xie.github.io/Myosotis-Config/web"
+                const _a_1 = document.getElementById("a_1")
+                const _a_2 = document.getElementById("a_2")
+                const _a_3 = document.getElementById("a_3")
+                _a_1.addEventListener("click", async () => {
+                    await navigator.clipboard.writeText(baseUrl + "/index.css")
+                    window.alert("Css file address copied. ")
+                })
+                _a_2.addEventListener("click", async () => {
+                    await navigator.clipboard.writeText(baseUrl + "/index.js")
+                    window.alert("Js file address copied. ")
+                })
+                _a_3.addEventListener("click", async () => {
+                    await navigator.clipboard.writeText(baseUrl + "/favicon.ico")
+                    window.alert("Favicon file address copied. ")
+                })
+            </script>
+        </nav>
+    </div>
+
+    <section class="select-view">
+        <select class="select-view-select">
+            <option value="CSS" selected>CSS Styles</option>
+            <option value="JS">Scripts</option>
+        </select>
+        <section class="select-view-view option-CSS">
+            <div id="contents_css">
+                <h2>Contents</h2>
+                <p>
+                <ol>
+                    <li>
+                        <a href="#contents_css">Contents</a>
+                    </li>
+                    <li>
+                        <a href="#format_examples">Format Examples</a>
+                    </li>
+                    <li>
+                        <a href="#explaination">Explaination</a>
+                        <ol>
+                            <li>
+                                <a href="#explaination-fonts">Fonts</a>
+                            </li>
+                            <li>
+                                <a href="#explaination-meaurements">Meaurements</a>
+                            </li>
+                            <li>
+                                <a href="#explaination-structures">Structures</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                </p>
+            </div>
+
+            <div id="format_examples">
+                <h2>Format Examples</h2>
+                <table style="margin-inline: auto;">
+                    <caption>Elements' Formats</caption>
+                    <thead>
+                        <th>Label Name</th>
+                        <th>Effect</th>
+                        <th>Example</th>
+                        <th>Remark</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                a
+                            </th>
+                            <td>
+                                Hyperlink
+                            </td>
+                            <td>
+                                <p><a href="#">Hello World! </a></p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                abbr
+                            </th>
+                            <td>
+                                Abbreviation
+                            </td>
+                            <td>
+                                <p><abbr title="Abbreviation" lang="en">Abbr</abbr></p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                address
+                            </th>
+                            <td>
+                                Address
+                            </td>
+                            <td>
+                                <address>
+                                    Author: Acan<br>
+                                    Email: xie.zeyu20@gmail.com<br>
+                                    Address: Forskarbacken 7, Universitet, Stockholm, Sweden
+                                </address>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                area / map
+                            </th>
+                            <td>
+                                An area of an image / Define an image map
+                            </td>
+                            <td>
+                                <img src="./images/Hydrangea.png" alt="Hydrangea" usemap="#map_1" width="81">
+                                <map name="map_1">
+                                    <area shape="rect" coords="0,0,50,50" href="#" alt="Top-left Corner">
+                                </map>
+                            </td>
+                            <td>
+                                In the left image, the top-left corner is clickable.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                article
+                            </th>
+                            <td>
+                                Article
+                            </td>
+                            <td>
+                                <article>
+                                    <h2>The Title of the Article</h2>
+                                    <p>The content of the article.</p>
+                                    <footer>
+                                        <p>Author: Acan</p>
+                                        <p>Date: 2023-12-18</p>
+                                    </footer>
+                                </article>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                aside
+                            </th>
+                            <td>
+                                Aside
+                            </td>
+                            <td>
+                                <aside>
+                                    <h3>Relative Links</h3>
+                                    <ul>
+                                        <li><a href="#">Article 1</a></li>
+                                        <li><a href="#">Article 2</a></li>
+                                    </ul>
+                                </aside>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                b
+                            </th>
+                            <td>
+                                Bold
+                            </td>
+                            <td>
+                                <p><b>Hello World! </b></p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                bdi
+                            </th>
+                            <td>
+                                Bi-Directional Isolation
+                            </td>
+                            <td>
+                                <p><bdi>Apple</bdi> is an English word, while <bdi>苹果</bdi> is a Chinese word.</p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                bdo
+                            </th>
+                            <td>
+                                Bi-Directional Override
+                            </td>
+                            <td>
+                                <p><bdo dir="rtl">Hello World! 你好，世界！</bdo></p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>blockquote</th>
+                            <td>
+                                Long quotation
+                            </td>
+                            <td>
+                                <blockquote>Hello World! </blockquote>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>button</th>
+                            <td>Button</td>
+                            <td>
+                                <p>
+                                    <button>Hello World! </button>
+                                </p>
+                            </td>
+                            <td>/</td>
+                        </tr>
+                        <tr>
+                            <th>canvas</th>
+                            <td>Canvas</td>
+                            <td>
+                                <canvas width="144" , height="81" id="canvas_1">
+                                    Your explorer doesn't support canvas.
+                                </canvas>
+                                <script>
+                                    var _canvas_1 = document.getElementById("canvas_1");
+                                    var ctx = _canvas_1.getContext("2d");
+                                    ctx.fillStyle = "grey";
+                                    ctx.fillRect(0, 0, 100, 80);
+                                </script>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>cite</th>
+                            <td>Title of books, articles etc.</td>
+                            <td>
+                                <p>
+                                    <cite>La Traviata</cite>
+                                </p>
+                            </td>
+                            <td>/</td>
+                        </tr>
+                        <tr>
+                            <th>code</th>
+                            <td>Code</td>
+                            <td>
+                                <p>Please input <code>console.log("Hello World! ")</code> to ask your computer to output
+                                    "Hello
+                                    World! ".</p>
+                            </td>
+                            <td>/</td>
+                        </tr>
+                        <tr>
+                            <th>data</th>
+                            <td>Readable translation for machine</td>
+                            <td>
+                                <ul>
+                                    <li><data value="14285">Tomato</data></li>
+                                    <li><data value="14286">Potato</data></li>
+                                    <li><data value="14287">Sugar</data></li>
+                                </ul>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>datalist</th>
+                            <td>Pre defined list for input label</td>
+                            <td>
+                                <div>
+                                    <label for="input_1">Choose your explorer</label>
+                                    <input list="datalist_1" name="input_1" id="input_1">
+                                    <datalist id="datalist_1">
+                                        <option value="Edge"></option>
+                                        <option value="Chrome"></option>
+                                        <option value="Safari"></option>
+                                        <option value="Firefox"></option>
+                                    </datalist>
+                                </div>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>dd / dl / dt</th>
+                            <td>Description / Description list / Descripted object</td>
+                            <td>
+                                <dl>
+                                    <dt>Beijing</dt>
+                                    <dd>Capital of China</dd>
+                                    <dt>Stockholm</dt>
+                                    <dd>Capital of Sweden</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>del</th>
+                            <td>Deleted contents</td>
+                            <td>
+                                <p>
+                                    Sharon, Lisa <del>and Ada</del> are my wives.
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>details / summary</th>
+                            <td>Details / The title of details</td>
+                            <td>
+                                <details>
+                                    <summary>CCP</summary>
+                                    <p>Chinese Communist Party (CCP) is the party governing Chinese people. </p>
+                                </details>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>dfn</th>
+                            <td>
+                                Defination
+                            </td>
+                            <td>
+                                <p><dfn>HTML</dfn>, or Hyper Text Markup Language for long, is the standard markup
+                                    language for
+                                    creating Web pages. </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>dialog</th>
+                            <td>Dialog window</td>
+                            <td>
+                                <dialog open>Hello World! </dialog>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>div</th>
+                            <td>
+                                Division
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Hello World! </p>
+                                </div>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>em</th>
+                            <td>Stress the content</td>
+                            <td>
+                                <p>
+                                    You <em>must</em> go quickly!
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>fieldset / form / legend</th>
+                            <td>Divide the forms / Forms / Title of each fieldset</td>
+                            <td>
+                                <form>
+                                    <fieldset>
+                                        <legend>Basic Information</legend>
+                                        <label for="input_2">NAME</label>
+                                        <input type="text" name="input_2" id="input_2">
+                                        <br>
+                                        <label for="input_3">SEX</label>
+                                        <input type="text" name="input_3" id="input_3">
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Education Information</legend>
+                                        <label for="input_4">SCHOOL</label>
+                                        <input type="text" name="input_4" id="input_4">
+                                        <br>
+                                        <label for="input_5">GPA</label>
+                                        <input type="text" name="input_5" id="input_5">
+                                    </fieldset>
+                                </form>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>figcaption / figure</th>
+                            <td>Title of a figure / Figure</td>
+                            <td>
+                                <figure>
+                                    <img src="./images/hydrangea.png" alt="Hydrangea" style="width: 81px;">
+                                    <figcaption>Hydrangea</figcaption>
+                                </figure>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>footer</th>
+                            <td>
+                                Footer
+                            </td>
+                            <td>
+                                <footer>
+                                    Author: Acan<br>
+                                    Date: 2023-12-18
+                                </footer>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                h1 - h6
+                            </th>
+                            <td>
+                                Titles
+                            </td>
+                            <td>
+                                <h1>First Level Title</h1>
+                                <h2>Second Level Title</h2>
+                                <h3>Third Level Title</h3>
+                                <h4>Fourth Level Title</h4>
+                                <h5>Fifth Level Title</h5>
+                                <h6>Sixth Level Title</h6>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>header</th>
+                            <td>Headers of articles or pages</td>
+                            <td>
+                                <article>
+                                    <header>
+                                        <h2>This is the title</h2>
+                                        <p>By Acan Xie</p>
+                                        <p>2023-12-18</p>
+                                    </header>
+                                    <p>This is the main part of the article.</p>
+                                </article>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                hgroup
+                            </th>
+                            <td>
+                                A title and several paragraphs
+                            </td>
+                            <td>
+                                <hgroup>
+                                    <h2>This is a title</h2>
+                                    <p>Paragraph 1 starts from here. </p>
+                                    <p>Paragraph 2 starts from here. </p>
+                                    <p>This is the last paragraph. </p>
+                                </hgroup>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>hr</th>
+                            <td>Divide different topics</td>
+                            <td>
+                                <hr>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                i
+                            </th>
+                            <td>
+                                Texts in special tones
+                            </td>
+                            <td>
+                                <p>
+                                    The company named <i>Apple</i> introduced the first smartphone.
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                iframe
+                            </th>
+                            <td>
+                                Inner frames
+                            </td>
+                            <td>
+                                <iframe title="Google" src="https://www.google.com" frameborder="0" width="144px"
+                                    height="81px"></iframe>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>img</th>
+                            <td>Images</td>
+                            <td>
+                                <img src="./images/Hydrangea.png" alt="Hydrangea" width="81px">
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>input</th>
+                            <td>Input</td>
+                            <td>
+                                <form>
+                                    <fieldset>
+                                        <legend>Different kinds of input</legend>
+                                        <label for="input_6">Button</label>
+                                        <input type="button" name="input_6" id="input_6" value="Hello World! ">
+                                        <br>
+                                        <label for="input_7">Checkbox</label>
+                                        <input type="checkbox" name="input_7" id="input_7">
+                                        <br>
+                                        <label for="input_8">Color</label>
+                                        <input type="color" name="input_8" id="input_8">
+                                        <br>
+                                        <label for="input_9">Date</label>
+                                        <input type="date" name="input_9" id="input_9">
+                                        <br>
+                                        <label for="input_10">Datetime-Local</label>
+                                        <input type="datetime-local" name="input_10" id="input_10">
+                                        <br>
+                                        <label for="input_11">Email</label>
+                                        <input type="email" name="input_11" id="input_11">
+                                        <br>
+                                        <label for="input_12">File</label>
+                                        <input type="file" name="input_12" id="input_12">
+                                        <br>
+                                        <label for="input_13">Hidden</label>
+                                        <input type="hidden" name="input_13" id="input_13">
+                                        <br>
+                                        <label for="input_14">Image</label>
+                                        <input type="image" name="input_14" id="input_14">
+                                        <br>
+                                        <label for="input_15">Month</label>
+                                        <input type="month" name="input_15" id="input_15">
+                                        <br>
+                                        <label for="input_16">Number</label>
+                                        <input type="number" name="input_16" id="input_16">
+                                        <br>
+                                        <label for="input_17">Password</label>
+                                        <input type="password" name="input_17" id="input_17">
+                                        <br>
+                                        <label for="input_18">Radio</label>
+                                        <input type="radio" name="input_18" id="input_18">
+                                        <br>
+                                        <label for="input_19">Range</label>
+                                        <input type="range" name="input_19" id="input_19" min="10" max="20" step="2">
+                                        <br>
+                                        <label for="input_20">Reset</label>
+                                        <input type="reset" name="input_20" id="input_20" value="Reset">
+                                        <br>
+                                        <label for="input_21">Search</label>
+                                        <input type="search" name="input_21" id="input_21">
+                                        <br>
+                                        <label for="input_22">Submit</label>
+                                        <input type="submit" name="input_22" id="input_22" value="Submit">
+                                        <br>
+                                        <label for="input_23">Tel</label>
+                                        <input type="tel" name="input_23" id="input_23">
+                                        <br>
+                                        <label for="input_24">Text</label>
+                                        <input type="text" name="input_24" id="input_24">
+                                        <br>
+                                        <label for="input_25">Time</label>
+                                        <input type="time" name="input_25" id="input_25">
+                                        <br>
+                                        <label for="input_26">Url</label>
+                                        <input type="url" name="input_26" id="input_26">
+                                        <br>
+                                        <label for="input_27">Week</label>
+                                        <input type="week" name="input_27" id="input_27">
+                                    </fieldset>
+                                </form>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                ins
+                            </th>
+                            <td>
+                                Inserted texts
+                            </td>
+                            <td>
+                                <p>Sharon, Amy <ins>and Lisa</ins> are my wives.</p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                kbd
+                            </th>
+                            <td>
+                                Keyboard
+                            </td>
+                            <td>
+                                <p>Please press <kbd>Enter</kbd> to submit your answer.</p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                label
+                            </th>
+                            <td>
+                                Define the label of inputs
+                            </td>
+                            <td>
+                                <div>
+                                    <label for="input_28">Example Label</label>
+                                    <input type="text" name="input_28" id="input_28" placeholder="Example Input">
+                                </div>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                li / ol / ul
+                            </th>
+                            <td>
+                                List items / Ordered lists / Unordered lists
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Apple</li>
+                                    <li>Banana</li>
+                                </ul>
+                                <ol>
+                                    <li>Apple</li>
+                                    <li>Banana</li>
+                                </ol>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                main
+                            </th>
+                            <td>
+                                Define the main part of the page
+                            </td>
+                            <td>
+                                <main>
+                                    <p>Hello World! </p>
+                                </main>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>mark</th>
+                            <td>Marked texts</td>
+                            <td>
+                                <p>
+                                    Don't forget to buy <mark>milk</mark> tomorrow.
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>menu</th>
+                            <td>List without order</td>
+                            <td>
+                                <menu>
+                                    <li>Apple</li>
+                                    <li>Banana</li>
+                                    <li>Coconut</li>
+                                </menu>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                meter
+                            </th>
+                            <td>Define a meter within a known range</td>
+                            <td>
+                                <p>
+                                    <label for="meter_1">Car Speed</label>
+                                    <meter id="meter_1" value="120" min="0" max="180" optimum="60">
+                                        120 km/h
+                                    </meter>
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                nav
+                            </th>
+                            <td>
+                                Navigation Links
+                            </td>
+                            <td>
+                                <nav>
+                                    <a href="https://google.com">Google</a>
+                                    <a href="https://baidu.com">Baidu</a>
+                                    <a href="https://facebook.com">Facebook</a>
+                                </nav>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                noscript
+                            </th>
+                            <td>
+                                Define contents for explorers not supporting scripts
+                            </td>
+                            <td>
+                                <noscript>
+                                    <p>Please allow your explorer to use scripts. </p>
+                                </noscript>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                optgroup / option / select
+                            </th>
+                            <td>
+                                Groups for dropdown menus / Options / Dropdown menus
+                            </td>
+                            <td>
+                                <select name="select_1" id="select_1">
+                                    <optgroup label="Germany 🇩🇪">
+                                        <option value="Audi">Audi</option>
+                                        <option value="Benz">Mercedes Benz</option>
+                                    </optgroup>
+                                    <optgroup label="Japan 🇯🇵">
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Nissan">Nissan</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>output</th>
+                            <td>
+                                Output value
+                            </td>
+                            <td>
+                                <form oninput="output_1.value=parseInt(input_29.value)+parseInt(input_30.value)">
+                                    <input type="range" id="input_29" min="0" max="100" step="10" value="50">
+                                    +<input type="number" id="input_30" value="25">
+                                    =<output name="output_1" for="input_29 input_30"></output>
+                                </form>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                p
+                            </th>
+                            <td>
+                                Paragraph
+                            </td>
+                            <td>
+                                <p>Hello World! </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                picture
+                            </th>
+                            <td>
+                                Multiple images
+                            </td>
+                            <td>
+                                <picture>
+                                    <source media="(min-width: 81px)" srcset="./images/Hydrangea.png">
+                                    <source media="(min-width: 100px)" srcset="./images/Hydrangea.png">
+                                    <img src="./images/Hydrangea.png" alt="Hydrangea" width="144px">
+                                </picture>
+                            </td>
+                            <td>
+                                Reset the size of windows and the explorer can display different kinds of photos.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>pre</th>
+                            <td>
+                                Pre formatted texts
+                            </td>
+                            <td>
+                                <pre>
+            Hello World! 
+              Hello World! </pre>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                progress
+                            </th>
+                            <td>
+                                Progress
+                            </td>
+                            <td>
+                                <div>
+                                    <label for="progress_1">Download Progress</label>
+                                    <progress id="progress_1" value="64" max="100">64 %</progress>
+                                </div>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                q
+                            </th>
+                            <td>
+                                Short quotes
+                            </td>
+                            <td>
+                                <p>
+                                    <q>Hello World! </q>
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                rp / rt / ruby
+                            </th>
+                            <td>
+                                Provide support for "()" on those explorers not supporting ruby display / Define some
+                                east Asian
+                                characters' appearance and pronounciation / Ruby notations
+                            </td>
+                            <td>
+                                <p>
+                                    <ruby>
+                                        漢 <rp>(</rp>
+                                        <rt>ㄏㄢˋ</rt>
+                                        <rp>)</rp>
+                                    </ruby>
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>s</th>
+                            <td>Words which are no longer correct</td>
+                            <td>
+                                <p><s>There are 15 tickets left only!</s></p>
+                                <p>No tickets!</p>
+                            </td>
+                            <td>/</td>
+                        </tr>
+                        <tr>
+                            <th>samp</th>
+                            <td>Sample output from computers</td>
+                            <td>
+                                <p>
+                                    That's what on my screen: <br>
+                                    <samp>Sorry! No available rooms for you!</samp><br>
+                                    What should I do now?
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                search
+                            </th>
+                            <td>
+                                A group of contents related to search
+                            </td>
+                            <td>
+                                <search>
+                                    <form>
+                                        <label for="input_31">Search Texts Here</label>
+                                        <input type="search" name="input_31" id="input_31"
+                                            placeholder="What do you want to search today?">
+                                    </form>
+                                </search>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>section</th>
+                            <td>
+                                A part of the page
+                            </td>
+                            <td>
+                                <section>
+                                    <p>Hello World! </p>
+                                </section>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>small</th>
+                            <td>Small texts</td>
+                            <td>
+                                <p>
+                                    <small>Hello small World! </small>
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                source
+                            </th>
+                            <td>Media sources</td>
+                            <td>
+                                <audio controls>
+                                    <source src="./audios/Blue_and_White_Porcelain.mp3" type="audio/mpeg">
+                                    Your explorer does not support audio label.
+                                </audio>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                span
+                            </th>
+                            <td>
+                                A part of text or page
+                            </td>
+                            <td>
+                                <div>
+                                    <span>Hello World! </span>
+                                    <span>
+                                        <p>Hello World! </p>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                strong
+                            </th>
+                            <td>
+                                Important texts
+                            </td>
+                            <td>
+                                <p>This is <strong>Mr. Rubin</strong>, a very famous mathematician. </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>sub / sup</th>
+                            <td>
+                                Subscript text / Supscript text
+                            </td>
+                            <td>
+                                <p>Water is written as H<sub>2</sub>O in chemistry. </p>
+                                <p>Suppose a is the width of a square, then a<sup>2</sup> is the area of it. </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                template
+                            </th>
+                            <td>
+                                Something temporarily hidden or to be shown as a template
+                            </td>
+                            <td id="td_1">
+                                <template id="template_1">
+                                    My name is:
+                                </template>
+                                <script>
+                                    const _td_1 = document.getElementById("td_1")
+                                    const _template_1 = document.getElementById("template_1");
+
+                                    function showTemplate_1(name) {
+                                        let _template_1_clone = _template_1.content.cloneNode(true);
+                                        _template_1_clone.textContent += (name + ". ")
+                                        _td_1.appendChild(_template_1_clone);
+                                    }
+
+                                    showTemplate_1("Acan")
+                                    showTemplate_1("Sharon")
+                                    showTemplate_1("Tesla")
+                                    showTemplate_1("Woods")
+                                </script>
+                            </td>
+                            <td id="td_2">
+                                Explorer supports templates:
+                                <script>
+                                    const _td_2 = document.getElementById("td_2")
+                                    if (document.createElement("template").content) {
+                                        _td_2.innerHTML += "<u>True</u>"
+                                    } else {
+                                        _td_2.innerHTML += "<u>False</u>"
+                                    }
+                                </script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                time
+                            </th>
+                            <td>Time</td>
+                            <td>
+                                <p>We work from <time>10:00</time> to <time>21:00</time>. </p>
+                                <p>I have a date on <time datetime="2024-02-14 18:00">the Valentine's Day</time> with my
+                                    girlfriend.
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>u</th>
+                            <td>Underline</td>
+                            <td>
+                                <p><u>Hello</u> World! </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>var</th>
+                            <td>Var</td>
+                            <td>
+                                <p>
+                                    So we have <var>a</var> is equal to 1.
+                                </p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>video</th>
+                            <td>Video</td>
+                            <td>
+                                <video width="168px" controls>
+                                    <source src="./videos/Xukun_Cai.mp4" type="video/mp4">
+                                    Your explorer does not support video player.
+                                </video>
+                            </td>
+                            <td>
+                                The explorer plays the first source it supports.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>wbr</th>
+                            <td>Web break opportunity</td>
+                            <td>
+                                <p>To learn AJAX, you must be familiar with the XML<wbr> Http<wbr> Request Object.</p>
+                            </td>
+                            <td>
+                                /
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: center;"><small>Table 4.1: Elements' Formats</small></p>
+            </div>
+
+            <div id="explaination" style="text-align: justify;">
+                <h2>Explanation</h2>
+                <p>This page serves as a guide for my upcoming webpage design, emphasizing flexibility over static
+                    templates or
+                    other rigid structures. In essence, it allows for necessary modifications. I simply need to adhere
+                    to the
+                    overarching style of this page and create similarly styled pages. </p>
+                <h3 id="explaination-fonts">Fonts</h3>
+                <p>The text size is rigorously controlled, adhering to the fundamental principle that 1em corresponds to
+                    16px at
+                    the root of the DOM. Consequently, we have specified sizes such as 32px for h1, 24px for h2, 18.72px
+                    for h3,
+                    16px for h4, 13.33px for h5, and 10.67px for h6. Texts within small labels are set at 13.33px, while
+                    sub and
+                    sup texts are sized at 12px. Additionally, it's noteworthy that texts in label captions match the
+                    size of h3
+                    titles. </p>
+                <p>Font choices are quite regulated around here. Essentially, we stick to
+                    <code>"Times New Roman", Times, serif;</code> as the primary font. When it comes to code snippets
+                    and output
+                    samples, we opt for <code>"Courier New", Courier, monospace;</code>. No other font families make an
+                    appearance on our pages.
+                </p>
+                <p>In terms of font styles, several labels may appear similar in appearance, despite harboring distinct
+                    semantic
+                    effects. Consider hyperlinks, inserted texts, and abbreviations, which exhibit solid underlines;
+                    however,
+                    hyperlinks and inserted texts have solid lines, and abbreviations have dotted underlines. Deleted
+                    texts, on
+                    the other hand, feature strikethrough lines. Additionally, we employ bold formatting for strong
+                    labels,
+                    while addresses, blockquotes and citations are presented in italics. </p>
+                <p>Prior to proceeding, I wish to cite the words of Ockham in order to underscore the fundamental
+                    thoughts of
+                    the principle: </p>
+                <blockquote>
+                    Non sunt multiplicanda entia sine necessitate. (English: Entities are not to be multiplied without
+                    necessity)
+                </blockquote>
+                <p>In accordance with this principle, the following three guidelines are established: </p>
+                <ol>
+                    <li>The semantic meaning of HTML tags should be adhered to rigorously. </li>
+                    <li>The structure of HTML code should conform precisely to the outlined specifications. </li>
+                    <li>All blank areas must be regarded with precision to avoid errors on screens of varying sizes.
+                    </li>
+                </ol>
+                <h3 id="explaination-meaurements">Meaurements</h3>
+                <p>Now, let's discuss the measurements. We advise against any alterations, except for adhering to the
+                    natural
+                    flow of text. In other words, simply jotting down HTML codes, akin to Markdown codes, is a prudent
+                    choice.
+                    The template file <dfn>index.css</dfn> will generate blank spaces automatically.</p>
+                <p>By default, we exclusively apply padding to the body—specifically,
+                    <code>padding-inline: 16px;</code>. While
+                    there might be other elements with non-zero paddings, these are solely defaults set by Explorer.
+                    None of
+                    them have been incorporated into the <dfn>index.css</dfn> file.
+                </p>
+                <p>When it comes to borders, they are primarily essential in table-related elements such as table,
+                    thead, tbody,
+                    tr, th, and td. By default, we establish the width of the table's outer border as 2px, consistent
+                    with the
+                    line between thead and tbody. Other borders within tables have a default width of 1px. Nonetheless,
+                    all
+                    these borders manifest as solid lines in the default color (#000000). Certain other elements also
+                    feature
+                    nonzero borders; for instance, fieldsets have 1px-wide borders matching the borders of inputs. </p>
+                <p>Margins can be quite intricate for us, as they coexist with most block elements. To enhance the
+                    overall
+                    appearance, the margin of most block elements is configured using <code>margin-block: 1em; </code>,
+                    allowing
+                    them to dynamically adjust based on the font size of their parent elements. We refrain from adding
+                    <code>margin-inline</code> properties to them, with the exception of the body, which is designated
+                    as
+                    <code>margin-inline: auto; </code> to ensure centered display.
+                </p>
+                <p>We aim for the default spacing between elements to be determined by the margin value. Consequently,
+                    manually
+                    resetting margins or introducing line breaks is not advisable. In instances where margin overlap is
+                    eliminated, such as in flex display mode or with floating elements, it is permissible to manually
+                    remove the
+                    outermost <code>margin-block-start</code> and <code>margin-block-end</code> to maintain page
+                    standardization. </p>
+                <h3 id="explaination-structures">Structures</h3>
+                <p>We don't impose restrictions on the length of the page—it's of no concern.
+                    However, we do uphold a somewhat stringent rule regarding its width.
+                    Initially, taking into account the contents, we must specify: <code>width: auto; </code>.
+                    Subsequently, we establish the middle page size as the baseline, denoted by
+                    <code>$md: 728px; </code>, and
+                    set it as the maximum width for our pages: <code>max-width: $md; </code>.
+                    Additionally, with an eye on smaller screens, we require <code>max-width: 100%; </code>.
+                </p>
+                <table style="margin-inline: auto; text-align: center;">
+                    <thead>
+                        <th></th>
+                        <th>
+                            <p>Large Screens (PC)</p>
+                        </th>
+                        <th>
+                            <p>Small Screens (Smart Phones)</p>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <p>Wide Contents</p>
+                            </th>
+                            <td>
+                                <p>728px</p>
+                            </td>
+                            <td>
+                                <p>100%</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Thin Contents</p>
+                            </th>
+                            <td>
+                                <p>Auto</p>
+                            </td>
+                            <td>
+                                <p>Auto / 100%</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: center;"><small>Table 5.3.1: Body's Measurements</small></p>
+                <p>It's important to emphasize the significance of titles. In this guidance, we recommend using h1 for
+                    the page
+                    title and h2 for section titles. These titles hold considerable weight on a page, so their numbers
+                    should be
+                    limited. We highly recommend including a maximum of one h1 title and no more than ten h2 titles.
+                    Exceeding
+                    these limits may result in a page that appears overly complex.</p>
+                <p>H3 represents the third-level heading, intended for smaller subsections within sections. Meanwhile,
+                    h4 is
+                    notable for its equivalent size to regular text but with increased boldness. H5 and h6 are currently
+                    inactive due to their respective sizes. In essence, we contend that four levels suffice to convey
+                    the page's
+                    structural arrangement. </p>
+            </div>
+        </section>
+        <section class="select-view-view option-JS">
+            <div id="contents_js">
+                <h2>Contents</h2>
+                <p>
+                <ol>
+                    <li>
+                        <a href="#contents_js">Contents</a>
+                    </li>
+                    <li>
+                        <a href="#auto_filling">Auto Filling</a>
+                    </li>
+                    <li>
+                        <a href="#structures">Structures</a>
+                    </li>
+                </ol>
+                </p>
+            </div>
+            <div id="auto_filling">
+                <h2>Auto Filling</h2>
+                <p>Our <cite>index.js</cite> empowers you to seamlessly inject content into templates using specific
+                    class names. </p>
+                <table style="margin-inline: auto; text-align: center;">
+                    <caption>Auto Filling Rules</caption>
+                    <thead>
+                        <th>Class</th>
+                        <th>Content</th>
+                        <th>Example</th>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th>
+                                <p>author</p>
+                            </th>
+                            <td>
+                                <p>author name</p>
+                            </td>
+                            <td>
+                                <p class="author"></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <p>current_year</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current year index
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_year"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>current_month</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current month index (starts from 0)
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_month"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>current_monthName</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current month name
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_monthName"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>current_date</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current date index
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_date"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>current_day</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current day index
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_day"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>current_dayName</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current dayName
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_dayName"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>current_hour</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current hour index
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_hour"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>current_minute</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current minute index
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_minute"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>current_second</p>
+                            </th>
+                            <td>
+                                <p>
+                                    current second index
+                                </p>
+                            </td>
+                            <td>
+                                <p class="current_second"></p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <p style="text-align: center;"><small>Table 4.1: Auto Filling Rules</small></p>
+            </div>
+            <div id="structures">
+                <h2>Structures</h2>
+                <p>
+                    Our <cite>index.js</cite> facilitates the display of various structures alongside the original HTML
+                    grammar, each governed by distinct class names.
+                </p>
+                <div id="select-view-example">
+                    <h3>Select View</h3>
+                    <p>This allows you to show different contents based on different choices. </p>
+                    <div class="select-view">
+                        <select class="select-view-select">
+                            <option value="opt-1" selected>Option 1</option>
+                            <option value="opt-2">Option 2</option>
+                            <option value="opt-3">Option 3</option>
+                        </select>
+                        <p class="select-view-view option-opt-1">Paragraph 1</p>
+                        <p class="select-view-view option-opt-2">Paragraph 2</p>
+                        <p class="select-view-view option-opt-3">Paragraph 3</p>
+                    </div>
+                </div>
+                <div id="refreshing-example">
+                    <h3>Refreshing</h3>
+                    <p>Display contents requiring frequent refreshing. </p>
+                    <p>
+                        Date & Time:
+                        <span class="refreshing" content="new Date()" frequency="24">
+
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div id="functions">
+                <h2>Functions</h2>
+                <p>
+                    Our <cite>index.js</cite> provides some useful functions to simplify the script.
+                </p>
+                <div id="cookies">
+                    <h3>Cookies</h3>
+                    <p>We have several functions to deal with cookies easily.</p>
+                    <ol>
+                        <li>
+                            <p><b>setCookie</b>&nbsp;Run&nbsp;<code>setCookie(name, value, expirate_date)</code>&nbsp;to add cookies. (<code>expirate_date</code>&nbsp;should be an integer)</p>
+                        </li>
+                        <li>
+                            <p><b>getCookie</b>&nbsp;Run&nbsp;<code>getCookie(name)</code>&nbsp;to get the value of the relavant coookie, which will return&nbsp;<code>null</code>&nbsp;in case cookie not found.</p>
+                        </li>
+                        <li>
+                            <p><b>deleteCookie</b>&nbsp;Run&nbsp;<code>deleteCookie(name)</code>&nbsp;to delete a cookie.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>
+            ©️ <time class="current_year">[Current Year]</time> <a href="https://zeyu-xie.github.io/Acan"
+                class="author">[Author]</a>. All rights reserved.
+        </p>
+        <nav>
+            <a href="mailto:xie.zeyu20@gmail.com">Email</a> |
+            <a href="https://github.com/zeyu-xie">GitHub</a>
+        </nav>
+    </footer>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

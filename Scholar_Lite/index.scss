@@ -1,0 +1,382 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+* {
+  font-size: 16px;
+  @media only screen and (max-width: $md) {
+    font-size: 14px;
+  }
+  font-family: "Times New Roman", Times, serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-size: inherit;
+}
+
+address {
+  display: block;
+
+  margin-block: 1em;
+
+  font-size: inherit;
+}
+
+article {
+  display: block;
+
+  margin-block: 1em;
+
+  font-size: inherit;
+}
+
+aside {
+  display: block;
+
+  margin-block: 1em;
+}
+
+audio {
+  display: block;
+
+  margin-block: 1em;
+}
+
+bdi,
+bdo {
+  font-size: inherit;
+}
+
+blockquote {
+  display: block;
+
+  margin-block: 1em;
+  margin-inline: 2.5em;
+
+  font-size: inherit;
+  font-style: italic;
+}
+
+body {
+  display: block;
+
+  width: auto;
+  min-width: min-content;
+  max-width: $md;
+
+  padding-inline: 1em;
+
+  margin-inline: auto;
+  margin-block: 0;
+
+  font-size: 1em;
+}
+
+button {
+  font-size: 0.8333em;
+}
+
+canvas {
+  display: block;
+
+  margin-block: 1em;
+}
+
+caption {
+  font-size: 1.17em;
+  font-weight: bold;
+
+  margin-bottom: 1em;
+}
+
+cite {
+  font-size: inherit;
+}
+
+code {
+  font-size: inherit;
+  font-family: "Courier New", Courier, monospace;
+}
+
+dd {
+  display: block;
+
+  margin-inline-start: 2.5em;
+  font-size: inherit;
+}
+
+details {
+  display: block;
+
+  margin-block: 1em;
+  font-size: inherit;
+}
+
+dl {
+  display: block;
+
+  margin-block: 1em;
+  font-size: inherit;
+}
+
+dt {
+  display: block;
+
+  margin-inline: 0;
+  font-size: inherit;
+}
+
+div {
+  display: block;
+
+  box-sizing: border-box;
+
+  margin-block: 1em;
+  font-size: inherit;
+}
+
+fieldset {
+  display: block;
+
+  margin-inline: 2px;
+  margin-block: 1em;
+  font-size: inherit;
+}
+
+figure {
+  display: block;
+
+  width: fit-content;
+
+  margin-block: 1em;
+  margin-inline: 0px;
+  font-size: inherit;
+}
+
+footer {
+  display: block;
+
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+
+  font-size: 0.8333em;
+  text-align: center;
+
+  p {
+    margin-block: 0;
+  }
+
+  nav {
+    margin-block: 0;
+  }
+}
+
+form {
+  display: block;
+
+  margin-block: 1em;
+  font-size: inherit;
+}
+
+h1 {
+  margin-block: 0.6667em;
+  margin-inline: 0;
+
+  font-size: 2em;
+}
+
+h2 {
+  margin-block: 0.8333em;
+
+  font-size: 1.5em;
+}
+
+h3 {
+  margin-block: 1em;
+
+  font-size: 1.17em;
+}
+
+h4 {
+  margin-block: 1em;
+
+  font-size: 1em;
+}
+
+h5 {
+  margin-block: 1em;
+
+  font-size: 0.8333em;
+}
+
+h6 {
+  margin-block: 1em;
+
+  font-size: 0.6667em;
+}
+
+header {
+  display: block;
+
+  margin-block: 1em;
+}
+
+hgroup {
+  display: block;
+
+  margin-block: 1em;
+}
+
+hr {
+  display: block;
+
+  margin-block: 1em;
+}
+
+img {
+  display: block;
+
+  margin-block: 1em;
+}
+
+iframe {
+  display: block;
+
+  margin-block: 1em;
+  margin-inline: 0;
+
+  font-size: inherit;
+}
+
+input {
+  font-size: 0.8333em;
+}
+
+nav {
+  display: block;
+
+  margin-block: 1em;
+  margin-inline: 0;
+
+  font-size: inherit;
+}
+
+p {
+  display: block;
+
+  margin-block: 1em;
+  margin-inline: 0;
+
+  font-size: inherit;
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+
+  tab-size: 4;
+
+  overflow: scroll;
+}
+
+rt {
+  font-size: 0.75em;
+}
+
+samp {
+  font-family: "Courier New", Courier, monospace;
+}
+
+small {
+  font-size: 0.8333em;
+}
+
+select {
+  display: block;
+
+  margin-block: 1em;
+}
+
+span {
+  font-size: inherit;
+}
+
+sub,
+sup {
+  font-size: 0.75em;
+}
+
+table {
+  display: table;
+
+  border: 2px solid;
+
+  margin-block: 1em;
+
+  border-collapse: collapse;
+
+  box-sizing: border-box;
+
+  text-indent: initial;
+
+  font-size: inherit;
+}
+
+td {
+  display: table-cell;
+
+  padding: 1px;
+  border: 1px solid;
+
+  vertical-align: middle;
+  text-align: inherit;
+
+  font-size: inherit;
+}
+
+textarea {
+  box-sizing: border-box;
+  resize: none;
+}
+
+th {
+  display: table-cell;
+
+  padding: 1px;
+  border: 1px solid;
+
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: center;
+
+  font-size: inherit;
+}
+
+thead {
+  border: 2px solid;
+
+  font-size: inherit;
+}
+
+time {
+  font-size: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+
+  font-size: inherit;
+}
+
+video {
+  display: block;
+
+  margin-block: 1em;
+}
