@@ -83,7 +83,10 @@
             <a href="#" download="index.js" id="a_2">index.js</a> |
             <a href="#" download="favicon.ico" id="a_3">favicon.ico</a>
             <script>
-                const baseUrl = window.location.href.split("/index.html")[0].split("/")[0]
+                let baseUrl = window.location.href.split("/index.html")[0]
+                if (baseUrl[baseUrl.length - 1] === "/") {
+                    baseUrl = baseUrl.slice(0, baseUrl.length - 1)
+                }
                 const _a_1 = document.getElementById("a_1")
                 const _a_2 = document.getElementById("a_2")
                 const _a_3 = document.getElementById("a_3")
