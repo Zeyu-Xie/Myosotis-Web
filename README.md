@@ -1,2 +1,3 @@
 # Myosotis Web
- Web Templates
+
+A collection of various web templates.
