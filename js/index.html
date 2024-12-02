@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- base url -->
+    <base href="#">
+
+    <!-- charset info -->
+    <meta charset="UTF-8">
+
+    <!-- basic info -->
+    <meta name="author" content="Acan">
+    <meta name="keywords" content="JavaScript, template">
+    <meta name="description" content="Acan's standard web javascript template. ">
+
+    <!-- open graph -->
+    <meta property="og:title" content="Myosotis Web - Scholar Light">
+    <meta property="og:image" content="https://Zeyu-Xie.github.io/Myosotis-Web/Scholar-Light/favicon.ico">
+    <meta property="og:description" content="Acan's standard web javascript template. ">
+
+    <!-- browser info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- system info -->
+    <meta name="apple-mobile-web-app-title" content="Myosotis Web - JavaScript">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- search engine info -->
+    <meta name="robots" content="index, follow">
+
+    <!-- other meta info -->
+    <meta content="always" name="referrer">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" href="https://Zeyu-Xie.github.io/Myosotis-Web/Scholar-Light/favicon.ico">
+    <link rel="icon" href="https://Zeyu-Xie.github.io/Myosotis-Web/Scholar-Light/favicon.ico">
+
+    <!-- web title -->
+    <title>Myosotis Config - JavaScript</title>
+
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="https://Zeyu-Xie.github.io/Myosotis-Web/Scholar-Light/index.css">
+
+    <!-- script: Latex -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 style="display: none;">JavaScript</h1>
+        <nav>
+            <a href="../">Myosotis Web</a> >
+            <a href="#">JavaScript</a>
+        </nav>
+    </header>
+
+    <div id="download_files">
+        <h2>Download Files</h2>
+        <nav>
+            <a href="https://Zeyu-Xie.github.io/Myosotis-Web/js/bundle.js" download="bundle.js">bundle.js</a>
+        </nav>
+    </div>
+
+    <div id="copy_url">
+        <h2>Copy Url</h2>
+        <nav style="margin-block-end: 0;">
+            <a href="#" download="bundle.js" id="a_1">bundle.js</a>
+            <script>
+                const _a_1 = document.getElementById("a_1")
+                _a_1.addEventListener("click", async () => {
+                    await navigator.clipboard.writeText("https://Zeyu-Xie.github.io/Myosotis-Web/js/bundle.js")
+                    window.alert("JavaScript file address copied. ")
+                })
+            </script>
+        </nav>
+    </div>
+
+    <section>
+        <div id="contents_js">
+            <h2>Contents</h2>
+            <p>
+            <ol>
+                <li>
+                    <a href="#contents_js">Contents</a>
+                </li>
+                <li>
+                    <a href="#auto_filling">Auto Filling</a>
+                </li>
+                <li>
+                    <a href="#structures">Structures</a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="auto_filling">
+            <h2>Auto Filling</h2>
+            <p>Our <cite>index.js</cite> empowers you to seamlessly inject content into templates using specific
+                class names. </p>
+            <table style="margin-inline: auto; text-align: center;">
+                <caption>Auto Filling Rules</caption>
+                <thead>
+                    <th>Class</th>
+                    <th>Content</th>
+                    <th>Example</th>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <th>
+                            <p>author</p>
+                        </th>
+                        <td>
+                            <p>author name</p>
+                        </td>
+                        <td>
+                            <p class="author"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <p>current_year</p>
+                        </th>
+                        <td>
+                            <p>
+                                current year index
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_year"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>current_month</p>
+                        </th>
+                        <td>
+                            <p>
+                                current month index (starts from 0)
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_month"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>current_monthName</p>
+                        </th>
+                        <td>
+                            <p>
+                                current month name
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_monthName"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>current_date</p>
+                        </th>
+                        <td>
+                            <p>
+                                current date index
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_date"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>current_day</p>
+                        </th>
+                        <td>
+                            <p>
+                                current day index
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_day"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>current_dayName</p>
+                        </th>
+                        <td>
+                            <p>
+                                current dayName
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_dayName"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>current_hour</p>
+                        </th>
+                        <td>
+                            <p>
+                                current hour index
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_hour"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>current_minute</p>
+                        </th>
+                        <td>
+                            <p>
+                                current minute index
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_minute"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>current_second</p>
+                        </th>
+                        <td>
+                            <p>
+                                current second index
+                            </p>
+                        </td>
+                        <td>
+                            <p class="current_second"></p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <p style="text-align: center;"><small>Table 4.1: Auto Filling Rules</small></p>
+        </div>
+        <div id="structures">
+            <h2>Structures</h2>
+            <p>
+                Our <cite>index.js</cite> facilitates the display of various structures alongside the original HTML
+                grammar, each governed by distinct class names.
+            </p>
+            <div id="select-view-example">
+                <h3>Select View</h3>
+                <p>This allows you to show different contents based on different choices. </p>
+                <div class="select-view">
+                    <select class="select-view-select">
+                        <option value="opt-1" selected>Option 1</option>
+                        <option value="opt-2">Option 2</option>
+                        <option value="opt-3">Option 3</option>
+                    </select>
+                    <p class="select-view-view option-opt-1">Paragraph 1</p>
+                    <p class="select-view-view option-opt-2">Paragraph 2</p>
+                    <p class="select-view-view option-opt-3">Paragraph 3</p>
+                </div>
+            </div>
+            <div id="refreshing-example">
+                <h3>Refreshing</h3>
+                <p>Display contents requiring frequent refreshing. </p>
+                <p>
+                    Date & Time:
+                    <span class="refreshing" content="new Date()" frequency="24">
+
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div id="functions">
+            <h2>Functions</h2>
+            <p>
+                Our <cite>index.js</cite> provides some useful functions to simplify the script.
+            </p>
+            <div id="cookies">
+                <h3>Cookies</h3>
+                <p>We have several functions to deal with cookies easily.</p>
+                <ol>
+                    <li>
+                        <p><b>setCookie</b>&nbsp;Run&nbsp;<code>setCookie(name, value, expirate_date)</code>&nbsp;to add
+                            cookies. (<code>expirate_date</code>&nbsp;should be an integer)</p>
+                    </li>
+                    <li>
+                        <p><b>getCookie</b>&nbsp;Run&nbsp;<code>getCookie(name)</code>&nbsp;to get the value of the
+                            relavant coookie, which will return&nbsp;<code>null</code>&nbsp;in case cookie not found.
+                        </p>
+                    </li>
+                    <li>
+                        <p><b>deleteCookie</b>&nbsp;Run&nbsp;<code>deleteCookie(name)</code>&nbsp;to delete a cookie.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            ©️ <time class="current_year">[Current Year]</time> <a href="https://Zeyu-Xie.github.io"
+                class="author">[Author]</a>. All rights reserved.
+        </p>
+        <nav>
+            <a href="mailto:xie.zeyu20@gmail.com">Email</a> |
+            <a href="https://github.com/Zeyu-Xie">GitHub</a>
+        </nav>
+    </footer>
+
+    <script src="https://Zeyu-Xie.github.io/Myosotis-Web/js/bundle.js"></script>
+
+</body>
+
+</html>
