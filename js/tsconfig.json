@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "AMD",
+    "strict": true,
+    "target": "es5",
+    "removeComments": true,
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "outFile": "./bundle.js"
+  },
+  "include": [
+    "src/*.ts"
+  ]
+}
